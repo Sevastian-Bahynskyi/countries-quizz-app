@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizQuestionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/imageCountry"
+            android:layout_width="300dp"
+            android:layout_height="176dp"
+            android:layout_margin="30dp"
+            tools:srcCompat="@drawable/ic_flag_of_argentina" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="9" />
+
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="36dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/option_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/default_button_bg"
+                android:padding="12dp"
+                android:text="Button"
+                android:textAlignment="center"
+                android:textColor="@color/default_button_text"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/option_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/default_button_bg"
+                android:padding="12dp"
+                android:text="Button"
+                android:textAlignment="center"
+                android:textColor="@color/default_button_text"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/option_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/default_button_bg"
+                android:padding="12dp"
+                android:text="Button"
+                android:textAlignment="center"
+                android:textColor="@color/default_button_text"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/option_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/default_button_bg"
+                android:padding="12dp"
+                android:text="Button"
+                android:textAlignment="center"
+                android:textColor="@color/default_button_text"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="12dp"
+                android:text="Sumbit"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:cornerRadius="0dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
